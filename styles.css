@@ -1,0 +1,309 @@
+/* General Styles */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000;
+    color: #fff;
+    overflow-y: auto;
+    height: auto;
+}
+/* Ensure the body and content-wrapper take full height */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.content-wrapper {
+    flex: 1; /* Allows the wrapper to take up the remaining space */
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a1a2e;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0f3460;
+    border-radius: 5px;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #ffe600;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffd500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a2e;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+/* Game Image Section */
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0; /* Add some spacing from other sections */
+}
+
+.game-image {
+    max-width: 80%; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.7; /* Lowered opacity for a softer appearance  */
+    position: relative;
+}
+
+/* Optional: Overlay effect for better blending */
+.game-image {
+    position: relative;
+}
+
+.game-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust color and opacity to match your design */
+    border-radius: 10px; /* Match the border radius of the image */
+}
+
+
+/* Image Gallery Section */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.image-gallery img {
+    width: 30%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Computer Image - Slightly Larger */
+.computer-image img {
+    width: 35%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Games Image - Slightly Larger */
+.games-image img {
+    width: 35%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Section Styles */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+/* About Image - Slightly Larger */
+.about-image img {
+    width: 35%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Contact Page Styles */
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ffe600;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ffd500;
+}
+
+.contact-image img {
+    width: 33%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .welcome h1,
+    .about h1,
+    .contact h1 {
+        font-size: 36px;
+    }
+
+    .welcome p,
+    .about p,
+    .contact p {
+        font-size: 18px;
+    }
+
+    .image-gallery img, 
+    .about-image img, 
+    .computer-image img, 
+    .games-image img, 
+    .contact-image img {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
