@@ -112,6 +112,28 @@ footer {
     align-items: center;
     margin: 40px 0; /* Add some spacing from other sections */
 }
+/* Ensure full height layout */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Main content takes up remaining space */
+main {
+    flex-grow: 1;
+}
+
+/* Sticky footer styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+
 
 .game-image {
     max-width: 80%; /* Adjust as needed */
